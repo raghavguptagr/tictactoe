@@ -1,0 +1,192 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+  box-shadow: 0px 2px 5px gray;
+}
+.title {
+  width: 30%;
+}
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 70%;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.board {
+  height: 330px;
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 6px 6px 10px gray;
+}
+
+.tile {
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+#tile0 {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#tile1 {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+#tile2 {
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+#tile3 {
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+#tile4 {
+  border: 5px solid black;
+}
+#tile5 {
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+#tile6 {
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+}
+#tile7 {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+}
+#tile8 {
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.game p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: white;
+  width: 300px;
+  box-shadow: 6px 6px 5px gray;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+}
+@media only screen and (max-width: 400px) {
+  .title {
+    display: flex;
+    font-size: 0.2em !important;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+  }
+  .title h1 {
+    font-size: large;
+  }
+  .statistics {
+    display: flex;
+  }
+  .statistics h2 {
+    font-size: medium;
+  }
+}
